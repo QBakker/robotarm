@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quinten Opdracht1</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<script src="js/robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+
+			robotArm.loadLevel("exercise 1");
+			robotArm.speed = 500;
+
+			robotArm.moveRight();
+			robotArm.grab();
+			robotArm.moveLeft();
+			robotArm.drop();
+
+			robotArm.run();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quinten Opdracht8</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<script src="js/robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+
+			robotArm.loadLevel("exercise 9");
+			robotArm.speed = 2150;
+
+				for (var a = 1; a <=4; a++) {
+					for (var b = 1; b <= 4; b++) {
+					robotArm.grab();
+					for (var c = 1; c <= 5; c++) {
+						robotArm.moveRight();
+					}
+					robotArm.drop();
+					for (var d = 1; d <= 4; d++) {
+						robotArm.moveLeft();
+					}
+				}
+				for (var i = 1; i <= 4; i++) {
+				robotArm.moveLeft();
+				}	
+			}
+			
+			robotArm.run();
+		</script>
+	</body>
+</html>
+
+
