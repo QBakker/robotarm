@@ -42,3 +42,7 @@ article h1 {
 	padding: 20px;
 	border: 5px double #000000;	
 }
+
+.image {
+	width: 50%;
+}
