@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 30px auto;
     background-color: #c1c1c1;
 }
 
@@ -44,5 +44,22 @@ article h1 {
 }
 
 .image {
-	width: 50%;
+	width: 48%;
+}
+
+#back {
+	width: 50px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+	
+}
+
+#backHome {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+
 }
